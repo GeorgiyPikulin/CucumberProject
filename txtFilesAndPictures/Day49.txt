@@ -1,0 +1,86 @@
+Day-49
+--------
+TDD - Test Driven Development
+	Ex: TestNG, junIT
+
+BDD - Behavioral Driven Development
+	Ex: Cucumber
+
+3 files
+----
+1) Feature file  - gherkin launguge(Given, when, and, then etc..)
+		Scenarios
+			steps
+2) step definitions
+
+3) testRunner (Junit class)
+
+Feature File--> Scenarios---> steps
+
+Feature file
+---
+Scenario 1:
+	step 1
+	step2
+	----
+Scenario 2: 
+	step1
+	step2
+	step3
+	----
+
+step definition file
+-------------
+contains implemention
+
+TestRunner Class
+---
+exedcutes all the steps in feature file
+
+
+
+Usage of Gherkin keywords
+------
+xyz.feature
+-----
+Feature : <<feature name>>
+
+Scenario: <<scenario name>>
+
+	Given   condition1
+	And condition2
+	And  condition 3
+	-----
+
+	When action1
+	And action 2
+	And action 3
+	-----
+	Then validation1
+	And validation 2
+	And valdation 3
+	----
+	
+pom.xml
+-------
+cucumber-java
+cucumber-junit
+
+
+
+
+Pre-condition
+action/steps
+validation
+
+
+
+
+
+
+
+
+
+
+
+
